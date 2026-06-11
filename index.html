@@ -27,8 +27,10 @@
 
 <script type="importmap">
 { "imports": {
-  "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
-  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  "three": "https://cdn.jsdelivr.net/npm/three@0.184.0/build/three.webgpu.js",
+  "three/webgpu": "https://cdn.jsdelivr.net/npm/three@0.184.0/build/three.webgpu.js",
+  "three/tsl": "https://cdn.jsdelivr.net/npm/three@0.184.0/build/three.tsl.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.184.0/examples/jsm/"
 } }
 </script>
 </head>
@@ -65,28 +67,28 @@
 
       <div class="hero-right">
         <figure class="exhibit">
-          <figcaption class="mono fig-tag"><span class="cite">EXH.01</span> · CROSS-MARKET SPREAD</figcaption>
+          <figcaption class="mono fig-tag"><span class="cite">EXH.01</span> · EVIDENCE → VERDICT</figcaption>
           <div class="figure-frame">
             <div id="exhibit01" class="figure-canvas" role="img"
-                 aria-label="Live cross-market order-book depth instrument: two facing depth ladders for Polymarket and Kalshi on the same event, with the spread closing into an arbitrage line."></div>
+                 aria-label="Live agent instrument: evidence nodes are retrieved and lock into place, hairline edges cite each source to a claim, then the claim flips from pending to verdict and a single vermilion approval ring ignites."></div>
             <div class="hud" aria-hidden="true">
               <div class="hud-tl mono">
-                <div class="caps">DEPTH · CLOSURE</div>
-                <div class="dim">polymarket × kalshi — same event</div>
+                <div class="caps">RETRIEVE · CITE · VERDICT</div>
+                <div class="dim">claim → cited sources → approval</div>
               </div>
               <div class="hud-tr mono">
-                <div><span class="dim">bid</span> <span data-bid>—</span></div>
-                <div><span class="dim">ask</span> <span data-ask>—</span></div>
-                <div class="spread-row"><span class="dim">spread</span> <span data-spread>—</span> <span class="dim">bps</span></div>
+                <div><span class="dim">retrieved</span> <span data-retrieved>0</span></div>
+                <div><span class="dim">cited</span> <span data-cited>0</span></div>
+                <div class="spread-row"><span class="dim">verdict</span> <span data-verdict>—</span></div>
               </div>
               <div class="hud-bl mono">
-                <span class="sw sw-bid"></span> bid book&nbsp;&nbsp;<span class="sw sw-ask"></span> ask book
+                <span class="sw sw-evid"></span> evidence&nbsp;&nbsp;<span class="sw sw-claim"></span> claim
               </div>
               <div class="hud-br mono closure" data-closure>— monitoring —</div>
             </div>
           </div>
           <figcaption class="mono fig-cap">
-            same event · live re-quote <span class="cite">§ honest simulated order book</span>
+            audited agent · live re-read <span class="cite">§ cites every source</span>
           </figcaption>
         </figure>
       </div>

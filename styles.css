@@ -135,12 +135,12 @@ em { font-style: italic; }
 .hud-tl .caps { color: var(--paper-2); font-size: 10px; }
 .hud-tl .dim { font-size: 10px; margin-top: 3px; }
 .hud-tr { top: 0; right: 0; text-align: right; line-height: 1.7; font-size: 12px; }
-.hud-tr [data-bid] { color: var(--bid); } .hud-tr [data-ask] { color: var(--ask); }
+.hud-tr [data-retrieved], .hud-tr [data-cited] { color: var(--paper); }
 .hud-tr .spread-row { margin-top: 2px; }
-.hud-tr [data-spread] { color: var(--paper); font-weight: 600; }
+.hud-tr [data-verdict] { color: var(--accent-text); font-weight: 600; }
 .hud-bl { bottom: 0; left: 0; color: var(--muted); font-size: 10px; }
 .sw { display: inline-block; width: 9px; height: 9px; vertical-align: -1px; }
-.sw-bid { background: var(--bid); } .sw-ask { background: var(--ask); }
+.sw-evid { background: var(--muted); } .sw-claim { background: var(--paper); }
 .hud-br { bottom: 0; right: 0; color: var(--muted); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; }
 .hud-br.live { color: var(--accent-text); }
 
