@@ -89,19 +89,18 @@ em { font-style: italic; }
   font-variation-settings: "opsz" 120, "SOFT" 28, "WONK" 0;
   max-width: 18ch;
 }
-.verdict em { color: var(--accent); font-weight: 400; }
+.verdict em { color: var(--accent-text); font-weight: 400; }
 .statusline { font-size: clamp(11px, 1.5vw, 13px); letter-spacing: .08em; color: var(--paper-2); }
 .statusline .caps { color: var(--accent-text); margin-right: 4px; }
 
-.mast-foot { list-style: none; display: flex; flex-wrap: wrap; gap: 8px 28px; padding: 0; margin: 36px 0 0; font-size: 12.5px; }
-.mast-foot li { letter-spacing: .02em; }
-.mast-foot a { border-bottom: 1px solid color-mix(in srgb, var(--muted) 50%, transparent); padding-bottom: 1px; }
+.mast-foot-cue { margin: 36px 0 0; font-size: 12.5px; letter-spacing: .04em; }
+.mast-foot-cue a { border-bottom: 1px solid color-mix(in srgb, var(--accent) 50%, transparent); padding-bottom: 1px; color: var(--paper); }
+.mast-foot-cue a:hover { color: var(--accent); }
 
-.scroll-cue { position: absolute; bottom: 22px; left: 0; font-size: 11px; letter-spacing: .2em; animation: cue 3.2s ease-in-out infinite; }
-@keyframes cue { 0%,100%{opacity:.35; transform:translateY(0);} 50%{opacity:.8; transform:translateY(4px);} }
+.scroll-cue { position: absolute; bottom: 22px; left: 0; font-size: 11px; letter-spacing: .2em; opacity: .5; }
 
 /* ════════════ shared section body ════════════ */
-.read { font-size: clamp(19px, 2.5vw, 30px); line-height: 1.42; font-weight: 360; max-width: 24ch; margin: 40px 0 0; color: var(--paper); font-variation-settings: "opsz" 60, "SOFT" 20; }
+.read { font-size: clamp(19px, 2.5vw, 30px); line-height: 1.42; font-weight: 360; max-width: 24ch; margin: 40px 0 0; color: var(--paper); font-variation-settings: "opsz" 60, "SOFT" 24; }
 .read em { color: var(--accent); }
 .display-body { font-family: var(--serif); }
 
@@ -122,7 +121,7 @@ em { font-style: italic; }
   line-height: 1.46; font-weight: 360;
   max-width: 58ch; margin: clamp(34px, 5.5vh, 60px) 0 0;
   color: var(--paper-2);
-  font-variation-settings: "opsz" 50, "SOFT" 16;
+  font-variation-settings: "opsz" 50, "SOFT" 24;
 }
 .bridge em { color: var(--accent); font-style: italic; }
 .figure-canvas { position: absolute; inset: 0; }
@@ -209,6 +208,12 @@ figcaption .cite { margin-left: 6px; }
   .owner .role { grid-column: 2; }
   .owner .chan { grid-column: 2; }
   .figure-frame { aspect-ratio: 16 / 11; }
+  .hud > div { padding: 9px 10px; }
+  .hud-tr { font-size: 11px; line-height: 1.5; }
+  .hud-tl .dim { display: none; }
+}
+@media (max-width: 480px) {
+  .hud-bl { display: none; }
 }
 
 /* ---------- reduced motion: freeze to the printed dossier ---------- */

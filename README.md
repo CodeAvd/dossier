@@ -1,6 +1,6 @@
 # dossier — G. Avdeev
 
-A single-page portfolio for an AI &amp; Quant Engineer, built as a case file.
+A single-page portfolio for an AI Automation Engineer, built as a case file.
 
 The page borrows its own grammar from the work: a verdict header, numbered findings,
 an exhibits ledger that cites its sources, and a precondition gate. The one bold
